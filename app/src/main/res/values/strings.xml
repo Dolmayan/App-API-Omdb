@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lista_de_Filmes_oficial</string>
+    <string name="movie_name">Nome do Filme</string>
+    <string name="year">Ano</string>
+    <string name="voltar">Voltar</string>
+    <string name="released">lançamento</string>
+    <string name="genre">gênero</string>
+    <string name="rating">nota</string>
+    <string name="plot">sinopse</string>
+    <string name="button">Button</string>
+    <string name="pesquisar">Pesquisar</string>
+</resources>

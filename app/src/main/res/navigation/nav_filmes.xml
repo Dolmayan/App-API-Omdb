@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListFilmFragment">
+
+    <fragment
+        android:id="@+id/FavoriteFilmFragment"
+        android:name="com.example.ui.listFavoriteFilmes.ListFavoriteFragment"
+        tools:layout="@layout/fragment_filmes_favoritos">
+
+        <action
+            android:id="@+id/action_favorite_film_to_details_film"
+            app:destination="@id/DetailsFilmFragment" />
+
+        <action
+            android:id="@+id/action_favorite_film_to_list_film"
+            app:destination="@id/ListFilmFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ListFilmFragment"
+        android:name="com.example.ui.listFilmes.ListFilmFragment"
+        tools:layout="@layout/fragment_filmes">
+
+        <action
+            android:id="@+id/action_list_film_to_details_film"
+            app:destination="@id/DetailsFilmFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailsFilmFragment"
+        android:name="com.example.ui.detailsFilm.DetailsFilmFragment"
+        tools:layout="@layout/fragment_details_film">
+        <argument
+            android:name="id"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_details_film_to_list_film"
+            app:destination="@id/ListFilmFragment" />
+    </fragment>
+</navigation>
